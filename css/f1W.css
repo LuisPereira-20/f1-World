@@ -2,25 +2,3 @@ nav{
     display: flex;
     background-color: red;
 }
-/*
-ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  ul li {
-    display: inline-block;
-    position: relative;
-  }
-  
-  ul li ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1;
-  }
-  
-  ul li:hover ul {
-    display: block;
-  }*/
