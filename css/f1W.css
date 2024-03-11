@@ -2,3 +2,15 @@ nav{
     display: flex;
     background-color: red;
 }
+#Portada{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-content: center;
+}
+
+@media only screen and (min-width: 992px) {
+    #Portada{
+        grid-template-columns: 65% 35%;
+    }
+}
