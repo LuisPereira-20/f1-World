@@ -29,8 +29,8 @@
             src="./resources/img/pilotos con sus auto.webp" alt="">
         </div>
         <div id ="Parrilla">
-            <div >
-                <div class="flex flex-col items-center justify-center">
+            <div>
+                <div class="flex flex-col items-center justify-center mt-5">
                     <img class="w-1/4 cursor-pointer mt-5 mb-2"
                     src="./resources/img/Red bull.jpg" alt="">
                     <div class="bg-slate-200 p-5 rounded">
@@ -53,9 +53,15 @@
                         </ul>
                     </div>
                 </div>
+                <div class="flex flex-col items-center justify-center mt-10">
+                    <img src="./resources/img/aston m.jpg" alt="">
+                    <div class="bg-slate-200 p-5 rounded">
+                        <h4 class="font-semibold cursor-pointer hover:font-black">Aston Martin</h4>
+                    </div>
+                </div>
             </div>
             <div>
-                <div class="flex flex-col items-center justify-center">
+                <div class="flex flex-col items-center justify-center mt-10">
                     <img class="w-1/4 cursor-pointer mt-10 mb-2"
                     src="./resources/img/mercedes.jpg" alt="">
                     <div class="bg-slate-200 p-5 rounded">
@@ -63,6 +69,18 @@
                         <ul id="Mercedes" class="hidden items-center justify-center flex flex-col gap-1">
                             <li>Nombre: Mercedes-AMG Petronas F1 Team</li>
                             <li>Debut: 2010</li>
+                            <button class="p-3 bg-red-500 hover:bg-red-900 hover:text-white hover:font-bold cursor-pointer rounded">Ver más</button>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center justify-center mt-10">
+                    <img class="w-1/4 cursor-pointer mt-10 mb-2"
+                    src="./resources/img/mclaren.jpg" alt="">
+                    <div class="bg-slate-200 p-5 rounded">
+                        <h4  onclick="mostrarinfomclaren()" class="font-semibold cursor-pointer hover:font-black">McLaren</h4>
+                        <ul class="hidden items-center justify-center flex flex-col gap-1" id="mclaren">
+                            <li>Nombre: McLaren F1 Team</li>
+                            <li>Debut: 1966</li>
                             <button class="p-3 bg-red-500 hover:bg-red-900 hover:text-white hover:font-bold cursor-pointer rounded">Ver más</button>
                         </ul>
                     </div>

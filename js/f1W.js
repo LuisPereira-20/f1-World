@@ -34,3 +34,16 @@ elemento.forEach((elemento) => {
     });
 })
 
+function mostrarinfomclaren() {
+    const submenu = document.getElementById("mclaren");
+    submenu.classList.toggle("hidden");
+}
+
+const elements = document.querySelectorAll("#mclaren");
+elements.forEach((elemento) => {
+    elemento.addEventListener("click", () => {
+        mostrarsubmenu();
+    });
+})
+
+
