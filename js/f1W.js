@@ -46,4 +46,28 @@ elements.forEach((elemento) => {
     });
 })
 
+function mostrarinfoaston() {
+    const submenu = document.getElementById("aston");
+    submenu.classList.toggle("hidden");
+}
+
+const elemen = document.querySelectorAll("#aston");
+elemen.forEach((elemento) => {
+    elemento.addEventListener("click", () => {
+        mostrarsubmenu();
+    });
+})
+
+function mostrarinfoalpine() {
+    const submenu = document.getElementById("alpine");
+    submenu.classList.toggle("hidden");
+}
+
+const elemens = document.querySelectorAll("#alpine");
+elemens.forEach((elemento) => {
+    elemento.addEventListener("click", () => {
+        mostrarsubmenu();
+    });
+})
+
 
