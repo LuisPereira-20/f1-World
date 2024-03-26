@@ -18,15 +18,22 @@
             <div>
                 <h2 class="font-bold text-white mr-8 p-3">Escuderias</h2>
             </div>
-            <div class="min-[500px]:block min-[935px]:hidden mr-8 h-5 w-5 cursor-pointer">
+            <div class="min-[500px]:flex flex-col min-[935px]:hidden mr-10 h-5 w-30 cursor-pointer z-10" onclick="mostrarnavbar()">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
                     <path fill-rule="evenodd" d="M2 3.75A.75.75 0 0 1 2.75 3h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 3.75Zm0 4.167a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Zm0 4.166a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Zm0 4.167a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+                    <ul class="hidden gap-1 bg-red-500 p-15" id="navbar">
+                        <li class="bg-red-500 flex justify-center hover:bg-red-900 hover:text-white hover:font-bold">Inicio</li>
+                        <li class="bg-red-500 flex justify-center hover:bg-red-900 hover:text-white hover:font-bold">Circuitos</li>
+                        <li class="bg-red-500 flex justify-center hover:bg-red-900 hover:text-white hover:font-bold">Calendario</li>
+                        <li class="bg-red-500 flex justify-center hover:bg-red-900 hover:text-white hover:font-bold">Clasificacion de Pilotos</li>
+                        <li class="bg-red-500 flex justify-center hover:bg-red-900 hover:text-white hover:font-bold">Clasificacion de Constructores</li>
+                        <li class="bg-red-500 flex justify-center hover:bg-red-900 hover:text-white hover:font-bold">Palmares</li>
                 </svg>
+                
             </div>
         </nav>
         <div>
-            <img class="w-full h-96" 
-            src="./resources/img/pilotos con sus auto.webp" alt="">
+            <img class="w-full h-96" src="./resources/img/pilotos con sus auto.webp" alt="">
         </div>
         <div id ="Parrilla">
             <div>
@@ -97,7 +104,29 @@
                             <li>Nombre: Alpine F1 Team</li>
                             <li>Debut: 1977</li>
                             <button class="p-3 bg-red-500 hover:bg-red-900 hover:text-white hover:font-bold cursor-pointer rounded">Ver más</button>
+                        </ul>
+                    </div>
                 </div>
+                <div class="flex flex-col items-center justify-center mt-10">
+                    <img src="./resources/img/rb.png" alt="">
+                    <div class="bg-slate-200 p-5 rounded">
+                    <h4 onclick="mostrarinfoVCA()" class="font-semibold cursor-pointer hover:font-black">RB</h4>
+                        <ul class="hidden items-center justify-center flex flex-col gap-1" id="RB">
+                            <li>Nombre: Visa Cash App RB Team</li>
+                            <li>Debut: 2024</li>
+                            <button class="p-3 bg-red-500 hover:bg-red-900 hover:text-white hover:font-bold cursor-pointer rounded">Ver más</button>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center justify-center mt-10">
+                    <img src="./resources/img/haas.jpeg" alt="">
+                    <div class="bg-slate-200 p-5 rounded">
+                        <h4 onclick="mostrarinfohaas()" class="font-semibold cursor-pointer hover:font-black">Haas</h4>
+                        <ul class="hidden items-center justify-center flex flex-col gap-1" id="haas">
+                            <li>Nombre: Haas F1 Team</li>
+                            <li>Debut: 2018</li>
+                            <button class="p-3 bg-red-500 hover:bg-red-900 hover:text-white hover:font-bold cursor-pointer rounded">Ver más</button>
+                        </ul>
             </div>
         </div>
     </main>
